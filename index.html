@@ -3,446 +3,800 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>最大31,700円もらう完全手順書｜ポイントサイト経由の口座開設</title>
+<title>ポイントサイト経由で最大31,700円もらいながら楽天証券を開設する完全手順書</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: -apple-system, 'Hiragino Sans', sans-serif;
-  background: linear-gradient(160deg, #fef9c3 0%, #f0fdf4 60%, #f0f9ff 100%);
+  background: #f0f9ff;
   min-height: 100vh;
-  padding: 16px;
+  padding: 0 0 40px;
   color: #1e293b;
 }
 .container { max-width: 480px; margin: 0 auto; }
-.header {
-  background: linear-gradient(135deg, #15803d, #166534);
-  border-radius: 16px;
-  padding: 20px 18px;
-  margin-bottom: 20px;
+
+/* ヘッダー */
+.hero {
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 100%);
+  padding: 28px 20px 24px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(21,128,61,0.3);
+  margin-bottom: 0;
 }
-.header h1 { color: #fff; font-size: 18px; font-weight: 900; line-height: 1.5; margin-bottom: 6px; }
-.header-sub { color: rgba(255,255,255,0.9); font-size: 12px; line-height: 1.7; }
-.header-amount {
-  background: #fef08a; color: #854d0e; font-size: 22px; font-weight: 900;
-  padding: 8px 16px; border-radius: 10px; display: inline-block; margin: 10px 0 8px;
+.hero-eyebrow { color: #7dd3fc; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 10px; }
+.hero h1 { color: #fff; font-size: 19px; font-weight: 900; line-height: 1.5; margin-bottom: 12px; }
+.hero-amount {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #1e293b;
+  font-size: 26px;
+  font-weight: 900;
+  padding: 10px 24px;
+  border-radius: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 20px rgba(251,191,36,0.4);
 }
-.alert-box {
-  background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px;
-  padding: 14px 16px; margin-bottom: 16px;
+.hero-sub { color: rgba(255,255,255,0.7); font-size: 12px; line-height: 1.7; }
+
+/* 体験談バナー */
+.experience-card {
+  background: #fff;
+  margin: 16px 16px 0;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-left: 4px solid #0ea5e9;
 }
-.alert-box .alert-title { color: #dc2626; font-weight: 900; font-size: 14px; margin-bottom: 6px; }
-.alert-box ul { padding-left: 18px; font-size: 13px; line-height: 2.1; color: #7f1d1d; }
-.card { background: #fff; border-radius: 14px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
-.card-header { padding: 14px 16px 10px; border-bottom: 1px solid #f1f5f9; }
-.card-tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 20px; margin-bottom: 6px; }
-.tag-moppy { background: #fef3c7; color: #92400e; }
-.tag-hapitas { background: #ede9fe; color: #5b21b6; }
-.card-header h2 { font-size: 16px; font-weight: 900; line-height: 1.4; }
-.card-header .amount-badge {
-  display: inline-block; background: linear-gradient(135deg, #f59e0b, #d97706);
-  color: #fff; font-size: 13px; font-weight: 900; padding: 3px 12px; border-radius: 20px; margin-left: 6px;
+.exp-title { font-size: 13px; font-weight: 900; color: #0c4a6e; margin-bottom: 8px; }
+.exp-body { font-size: 12px; line-height: 1.9; color: #374151; }
+.exp-highlight {
+  background: #fef3c7;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #92400e;
+  font-weight: 700;
+}
+
+/* セクション */
+.section { margin: 16px 16px 0; }
+.section-title {
+  font-size: 11px; font-weight: 700; color: #64748b;
+  letter-spacing: 0.08em; margin-bottom: 8px; text-transform: uppercase;
+}
+
+/* カード */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.card-header {
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid #f1f5f9;
 }
 .card-body { padding: 14px 16px; }
-.step-list { display: flex; flex-direction: column; gap: 12px; }
-.step-item { display: flex; gap: 12px; align-items: flex-start; }
+
+.step-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; padding: 3px 10px;
+  border-radius: 20px; margin-bottom: 6px;
+}
+.badge-moppy { background: #fef3c7; color: #92400e; }
+.badge-hapitas { background: #ede9fe; color: #5b21b6; }
+.badge-prep { background: #f0fdf4; color: #15803d; }
+
+.card-header h2 { font-size: 15px; font-weight: 900; line-height: 1.4; }
+.amount-chip {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff; font-size: 12px; font-weight: 900;
+  padding: 2px 10px; border-radius: 20px; margin-left: 6px;
+}
+.amount-chip.green { background: linear-gradient(135deg, #22c55e, #16a34a); }
+
+/* ステップリスト */
+.steps { display: flex; flex-direction: column; gap: 14px; }
+.step { display: flex; gap: 12px; }
 .step-num {
-  min-width: 28px; height: 28px; background: #15803d; color: #fff;
-  border-radius: 50%; display: flex; align-items: center; justify-content: center;
-  font-size: 13px; font-weight: 900; flex-shrink: 0;
+  min-width: 26px; height: 26px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 900; flex-shrink: 0; margin-top: 2px;
+  background: #0ea5e9; color: #fff;
 }
-.step-num.warn { background: #dc2626; }
-.step-content { font-size: 13px; line-height: 1.7; padding-top: 4px; }
-.step-content strong { color: #dc2626; }
-.step-content .note {
-  margin-top: 4px; background: #f8fafc; border-left: 3px solid #94a3b8;
-  padding: 4px 8px; font-size: 12px; color: #475569; border-radius: 0 4px 4px 0;
+.step-num.red { background: #dc2626; }
+.step-num.gray { background: #94a3b8; font-size: 10px; }
+.step-content { font-size: 13px; line-height: 1.7; }
+.step-content b { color: #0c4a6e; }
+.note {
+  margin-top: 5px;
+  background: #f8fafc; border-left: 3px solid #cbd5e1;
+  padding: 5px 10px; font-size: 12px; color: #475569;
+  border-radius: 0 6px 6px 0; line-height: 1.7;
 }
-.step-content .ok {
-  margin-top: 4px; background: #f0fdf4; border-left: 3px solid #22c55e;
-  padding: 4px 8px; font-size: 12px; color: #15803d; border-radius: 0 4px 4px 0;
+.warn {
+  margin-top: 5px;
+  background: #fef2f2; border-left: 3px solid #f87171;
+  padding: 5px 10px; font-size: 12px; color: #b91c1c;
+  border-radius: 0 6px 6px 0; line-height: 1.7; font-weight: 600;
 }
-.condition-box {
-  background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px;
-  padding: 12px 14px; margin-bottom: 12px; font-size: 13px;
+.ok {
+  margin-top: 5px;
+  background: #f0fdf4; border-left: 3px solid #4ade80;
+  padding: 5px 10px; font-size: 12px; color: #15803d;
+  border-radius: 0 6px 6px 0; line-height: 1.7;
 }
-.condition-box .cond-title { font-weight: 700; color: #15803d; margin-bottom: 6px; font-size: 13px; }
-.condition-box ul { padding-left: 16px; line-height: 2.1; color: #374151; }
+
+/* 条件ボックス */
+.cond-box {
+  background: #f0fdf4; border: 1.5px solid #86efac;
+  border-radius: 10px; padding: 12px 14px; margin-bottom: 12px;
+}
+.cond-box-title { font-size: 12px; font-weight: 900; color: #15803d; margin-bottom: 7px; }
+.cond-box ul { padding-left: 16px; font-size: 12px; line-height: 2.1; color: #1e293b; }
+
 .ng-box {
-  background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px;
-  padding: 12px 14px; margin-top: 10px; font-size: 12px;
+  background: #fff7ed; border: 1.5px solid #fdba74;
+  border-radius: 10px; padding: 12px 14px; margin-top: 12px;
 }
-.ng-box .ng-title { font-weight: 700; color: #c2410c; margin-bottom: 6px; }
-.ng-box ul { padding-left: 16px; line-height: 2; color: #92400e; }
-.order-badge {
-  background: linear-gradient(135deg, #0ea5e9, #0284c7); color: #fff;
-  font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px;
-  display: inline-block; margin-bottom: 8px;
+.ng-box-title { font-size: 12px; font-weight: 900; color: #c2410c; margin-bottom: 7px; }
+.ng-box ul { padding-left: 16px; font-size: 12px; line-height: 2.1; color: #92400e; }
+
+/* ボタン */
+.btn {
+  display: block; text-align: center; padding: 14px 16px;
+  border-radius: 12px; text-decoration: none;
+  font-size: 14px; font-weight: 900; margin-top: 12px;
+  line-height: 1.3;
 }
-.summary-card {
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-  border-radius: 14px; padding: 16px; margin-bottom: 16px; color: #fff;
+.btn-moppy { background: linear-gradient(135deg, #f59e0b, #d97706); color: #1e293b; box-shadow: 0 3px 10px rgba(245,158,11,0.35); }
+.btn-hapitas { background: linear-gradient(135deg, #7c3aed, #6d28d9); color: #fff; box-shadow: 0 3px 10px rgba(124,58,237,0.35); }
+.btn-rakuten { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #fff; box-shadow: 0 3px 10px rgba(220,38,38,0.3); }
+.btn-sub { font-size: 11px; opacity: 0.85; font-weight: 600; display: block; margin-top: 3px; }
+
+/* 登録ボーナスバナー */
+.bonus-banner {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; color: #fff;
 }
-.summary-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 12px; opacity: 0.8; }
+.bonus-banner-title { font-size: 12px; font-weight: 700; opacity: 0.7; margin-bottom: 8px; }
+.bonus-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 13px;
+}
+.bonus-row:last-child { border-bottom: none; }
+.bonus-row .label { opacity: 0.85; }
+.bonus-row .val { font-weight: 900; color: #fbbf24; }
+
+/* まとめ */
+.summary {
+  background: linear-gradient(135deg, #0f172a, #1e3a5f);
+  border-radius: 14px; padding: 18px; margin-bottom: 12px; color: #fff;
+}
+.summary h3 { font-size: 13px; font-weight: 700; opacity: 0.7; margin-bottom: 12px; }
 .summary-row {
   display: flex; justify-content: space-between;
-  font-size: 13px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 13px; padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.summary-row .label { opacity: 0.8; }
-.summary-row .val { font-weight: 700; color: #fbbf24; }
+.summary-row .l { opacity: 0.85; }
+.summary-row .r { font-weight: 900; color: #fbbf24; }
 .summary-total {
-  margin-top: 10px; background: #fbbf24; color: #1e293b;
-  border-radius: 10px; padding: 10px 14px; font-size: 18px; font-weight: 900; text-align: center;
+  margin-top: 12px; background: #fbbf24; color: #1e293b;
+  border-radius: 10px; padding: 12px; font-size: 20px;
+  font-weight: 900; text-align: center;
 }
-.btn-link {
-  display: block; background: linear-gradient(135deg, #15803d, #166534); color: #fff;
-  text-align: center; padding: 14px; border-radius: 10px; text-decoration: none;
-  font-size: 14px; font-weight: 700; margin-top: 12px; box-shadow: 0 2px 8px rgba(21,128,61,0.3);
-}
-.btn-link.moppy { background: linear-gradient(135deg, #f59e0b, #d97706); color: #1e293b; }
-.btn-link.hapitas { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+.summary-note { font-size: 11px; color: rgba(255,255,255,0.4); text-align: center; margin-top: 8px; }
+
+/* 攻略ポイント */
 .tip-box {
-  background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px;
-  padding: 12px 14px; margin-bottom: 12px; font-size: 12px; color: #1e40af; line-height: 1.7;
+  background: #eff6ff; border: 1.5px solid #bfdbfe;
+  border-radius: 10px; padding: 12px 14px; margin-bottom: 12px;
+  font-size: 12px; color: #1e40af; line-height: 1.8;
 }
-.tip-box strong { display: block; margin-bottom: 4px; font-size: 13px; }
-.footer-note { text-align: center; font-size: 11px; color: #94a3b8; padding: 16px 0 32px; line-height: 1.9; }
+.tip-box strong { display: block; font-size: 13px; margin-bottom: 4px; }
+
+.order-flow {
+  background: #fff; border-radius: 12px; padding: 14px 16px;
+  margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.flow-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 0; border-bottom: 1px solid #f1f5f9; font-size: 13px;
+}
+.flow-item:last-child { border-bottom: none; }
+.flow-num {
+  min-width: 22px; height: 22px; border-radius: 50%;
+  background: #0f172a; color: #fbbf24;
+  font-size: 11px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.flow-text { line-height: 1.6; }
+.flow-text .sub { font-size: 11px; color: #94a3b8; margin-top: 1px; }
+
+.footer-note { text-align: center; font-size: 11px; color: #94a3b8; padding: 20px 16px 0; line-height: 1.9; }
+
+/* 区切り */
+.divider { height: 1px; background: #e2e8f0; margin: 4px 0 12px; }
+
+.qa-item { padding: 10px 0; border-bottom: 1px solid #f1f5f9; font-size: 13px; }
+.qa-item:last-child { border-bottom: none; }
+.qa-q { font-weight: 700; color: #0c4a6e; margin-bottom: 4px; }
+.qa-a { font-size: 12px; color: #475569; line-height: 1.7; }
 </style>
 </head>
 <body>
 <div class="container">
 
-  <div class="header">
-    <p style="color:rgba(255,255,255,0.8);font-size:11px;margin-bottom:4px;">📋 完全手順書</p>
-    <h1>ポイントサイト経由で<br>最大31,700円もらう方法</h1>
-    <div class="header-amount">合計 31,700円以上</div>
-    <p class="header-sub">楽天証券 + 楽天カード + 楽天銀行<br>それぞれ別に申し込むだけ（2026年8月現在）</p>
-  </div>
-
-  <div class="alert-box">
-    <div class="alert-title">⚠️ 最重要：必ず守ること</div>
-    <ul>
-      <li>3つの申し込みは<strong>必ず別々に</strong>行う</li>
-      <li>楽天証券申込中に出る「楽天カードも作る」「楽天銀行も開設する」チェックは<strong>絶対に外す</strong></li>
-      <li>各申し込みはポイントサイトのリンクをクリックした<strong>24時間以内</strong>に完了させる</li>
-      <li>シークレットモード・VPNは<strong>使用禁止</strong>（否認の原因になる）</li>
-      <li>iPhoneのSafariは「設定→Safari→サイト越えトラッキングを防ぐ」を<strong>OFF</strong>にしてから申し込む</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <div class="card-header"><h2>📌 申し込む順番</h2></div>
-    <div class="card-body">
-      <div class="step-list">
-        <div class="step-item">
-          <div class="step-num">①</div>
-          <div class="step-content"><strong style="color:#15803d;">まずモッピーに登録</strong>（楽天証券・楽天銀行で使う）</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">②</div>
-          <div class="step-content">
-            <strong style="color:#15803d;">モッピー経由で楽天証券を申し込む</strong>（13,000P）<br>
-            <span style="font-size:12px;color:#64748b;">口座開設後、別途5万円の入金が必要</span>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">③</div>
-          <div class="step-content">
-            <strong style="color:#15803d;">ハピタス経由で楽天カードを申し込む</strong>（10,700P）<br>
-            <span style="font-size:12px;color:#64748b;">楽天証券の審査待ち期間中にやるのが効率的</span>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">④</div>
-          <div class="step-content">
-            <strong style="color:#15803d;">モッピー経由で楽天銀行を申し込む</strong>（8,000P）<br>
-            <span style="font-size:12px;color:#64748b;">楽天証券・楽天カードとは必ず別に申し込む</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STEP 0 -->
-  <div class="card">
-    <div class="card-header">
-      <span class="order-badge">STEP 0</span>
-      <div class="card-tag tag-moppy">モッピー</div>
-      <h2>モッピーに無料登録する</h2>
-    </div>
-    <div class="card-body">
-      <div class="step-list">
-        <div class="step-item">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            下のリンクからモッピーに登録する（紹介リンク経由で登録ボーナスあり）
-            <div class="note">登録は無料。メールアドレスとパスワードだけでOK</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            SMS認証（本人確認）を完了させる
-            <div class="note">SMS認証を完了しないとポイントが受け取れない場合あり</div>
-          </div>
-        </div>
-      </div>
-      <a href="https://pc.moppy.jp/entry/invite.php?invite=A8aaA139" class="btn-link moppy" target="_blank">👆 モッピーに無料登録する（紹介リンク）</a>
-    </div>
-  </div>
-
-  <!-- STEP 1: 楽天証券 -->
-  <div class="card">
-    <div class="card-header">
-      <span class="order-badge">STEP 1</span>
-      <div class="card-tag tag-moppy">モッピー経由</div>
-      <h2>楽天証券の口座を開設する <span class="amount-badge">13,000円</span></h2>
-    </div>
-    <div class="card-body">
-      <div class="condition-box">
-        <div class="cond-title">✅ ポイント獲得条件（必読）</div>
-        <ul>
-          <li>初めて楽天証券に口座開設する方のみ対象</li>
-          <li>総合取引口座を開設すること（NISAのみ・法人・未成年はNG）</li>
-          <li>口座開設後<strong>30日以内に5万円以上を入金</strong>する</li>
-          <li>入金方法：らくらく入金・リアルタイム入金・通常振込のいずれか</li>
-          <li>申込から<strong>3ヶ月以内</strong>に口座開設を完了すること</li>
-        </ul>
-      </div>
-      <div class="step-list">
-        <div class="step-item">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            モッピーにログインした状態で下のボタンをタップ
-            <div class="note">必ずモッピーのリンクから遷移すること。直接楽天証券にアクセスすると対象外になる</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">2</div>
-          <div class="step-content">楽天証券の申込ページで必要事項を入力（楽天IDでログインして進む）</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num warn">!</div>
-          <div class="step-content">
-            <strong>「楽天カードも申し込む」「楽天銀行も開設する」チェックは必ず外す</strong>
-            <div class="note">ここで一緒に申し込むと楽天カード・楽天銀行のポイントサイト特典がまるごと消える</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">3</div>
-          <div class="step-content">マイナンバーカードまたは本人確認書類をアップロード（eKYCでスマホ完結）</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">4</div>
-          <div class="step-content">審査完了メールを待つ（通常1〜3営業日）</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">5</div>
-          <div class="step-content">
-            口座開設後<strong>30日以内に5万円以上を入金する</strong>
-            <div class="ok">入金後すぐNISAで5万円分買付すればOK。引き出し不可ではない</div>
-            <div class="note">楽天ポイントやクレカ積立は入金にカウントされない。マネーブリッジ設定だけでも対象外</div>
-          </div>
-        </div>
-      </div>
-      <div class="ng-box">
-        <div class="ng-title">🚫 やると対象外になるNG行動</div>
-        <ul>
-          <li>過去に楽天証券・楽天FXの口座開設歴がある</li>
-          <li>未成年口座・法人口座・IFA経由での申込</li>
-          <li>楽天カードのクレカ積立だけ行い、5万円の直接入金をしない</li>
-          <li>マネーブリッジを設定しただけで入金しない</li>
-          <li>申込から3ヶ月以上かかって口座開設した</li>
-          <li>口座開設後30日を過ぎてから入金した</li>
-        </ul>
-      </div>
-      <a href="https://pc.moppy.jp/ad/detail.php?site_id=111069" class="btn-link" target="_blank">👆 モッピー経由で楽天証券を申し込む</a>
-    </div>
-  </div>
-
-  <!-- STEP 2: 楽天カード -->
-  <div class="card">
-    <div class="card-header">
-      <span class="order-badge">STEP 2</span>
-      <div class="card-tag tag-hapitas">ハピタス経由</div>
-      <h2>楽天カードを発行する <span class="amount-badge">10,700円</span></h2>
-    </div>
-    <div class="card-body">
-      <div class="tip-box">
-        <strong>⏰ 期間限定ボーナス中（金額は変動あり）</strong>
-        通常ポイント＋チャレンジボーナスの合計。申し込み前に必ずハピタスで現在の還元額を確認すること。
-      </div>
-      <div class="condition-box">
-        <div class="cond-title">✅ ポイント獲得条件（必読）</div>
-        <ul>
-          <li>楽天カードを初めて発行する方のみ対象（種類問わず過去申込歴があるとNG）</li>
-          <li>対象カード：楽天カード・楽天PINKカードのみ</li>
-          <li>ハピタスのリンクをクリックしてから<strong>同一ブラウザで申込完了</strong>まで進むこと</li>
-          <li>カードが実際に<strong>手元に到着</strong>すること（受け取り必須）</li>
-          <li>申込から<strong>90日以内</strong>にカード発行されること</li>
-        </ul>
-      </div>
-      <div class="step-list">
-        <div class="step-item">
-          <div class="step-num">1</div>
-          <div class="step-content">ハピタスにログイン（未登録なら無料登録）</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            ハピタス内で「楽天カード」を検索し、ハピタス経由で申込ページへ移動
-            <div class="note">ページを離れず、そのまま同一ブラウザで申込完了まで進むこと</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            必要事項を入力して申し込む
-            <div class="note">申込完了画面の「カード申込受付ID」を必ずメモまたはスクショしておく（問い合わせ時に必要）</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            カードが郵送で届いたら受け取る
-            <div class="note">不在なら再配達を申請。受け取り拒否・長期不在はNG</div>
-          </div>
-        </div>
-      </div>
-      <div class="ng-box">
-        <div class="ng-title">🚫 やると対象外になるNG行動</div>
-        <ul>
-          <li>過去に楽天カード（種類問わず）の申込・保有歴がある</li>
-          <li>楽天ゴールド・プレミアム・ビジネス・銀行カード等の対象外カードを選ぶ</li>
-          <li>楽天証券の申込途中に出てくるボタンから楽天カードを申し込む</li>
-          <li>申込後に別ページへ移動してから再申込する</li>
-          <li>申込から90日以上かけてカード発行した・カードを受け取らなかった</li>
-          <li>楽天カード入会後90日以内に退会またはカード切り替えをした</li>
-        </ul>
-      </div>
-      <a href="https://hapitas.jp/" class="btn-link hapitas" target="_blank">👆 ハピタスにログインして楽天カードを申し込む</a>
-    </div>
-  </div>
-
-  <!-- STEP 3: 楽天銀行 -->
-  <div class="card">
-    <div class="card-header">
-      <span class="order-badge">STEP 3</span>
-      <div class="card-tag tag-moppy">モッピー経由</div>
-      <h2>楽天銀行の口座を開設する <span class="amount-badge">8,000円</span></h2>
-    </div>
-    <div class="card-body">
-      <div class="tip-box">
-        <strong>⏰ チャレンジボーナス中（金額は変動あり）</strong>
-        通常1,500P＋ボーナス6,500P＝合計8,000P。ボーナス終了後は1,500Pになる。申し込み前にモッピーで現在の還元額を確認すること。
-      </div>
-      <div class="condition-box">
-        <div class="cond-title">✅ ポイント獲得条件（必読）</div>
-        <ul>
-          <li>初めて楽天銀行の口座を開設する方のみ対象</li>
-          <li>口座開設後に<strong>初回ログインを完了</strong>すること（入金・残高は不要）</li>
-          <li>申込から<strong>90日以内</strong>にログインすること</li>
-          <li><strong>PCまたはスマホのブラウザ</strong>から申し込む（アプリ経由はNG）</li>
-        </ul>
-      </div>
-      <div class="step-list">
-        <div class="step-item">
-          <div class="step-num">1</div>
-          <div class="step-content">モッピーにログインした状態で下のボタンをタップ</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            楽天銀行の口座開設フォームに情報を入力
-            <div class="note">楽天会員IDでログインして進むとスムーズ</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">3</div>
-          <div class="step-content">本人確認書類のアップロード（eKYCでスマホ完結）</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">4</div>
-          <div class="step-content">ログイン情報（ユーザーID・パスワード・暗証番号）がメールまたは郵便で届く</div>
-        </div>
-        <div class="step-item">
-          <div class="step-num">5</div>
-          <div class="step-content">
-            届いたら<strong>スマホのブラウザ（Safari・Chrome等）から楽天銀行にログインする</strong>
-            <div class="ok">初回ログイン完了でポイント獲得条件達成！残高・入金は一切不要</div>
-            <div class="note">アプリからのログインは対象外。必ずブラウザから行うこと</div>
-          </div>
-        </div>
-      </div>
-      <div class="ng-box">
-        <div class="ng-title">🚫 やると対象外になるNG行動</div>
-        <ul>
-          <li>過去に楽天銀行の口座開設歴がある</li>
-          <li>楽天銀行アプリから申し込む・ログインする（ブラウザで行うこと）</li>
-          <li>楽天証券の口座開設と同時申込（必ず別々に申し込む）</li>
-          <li>法人口座での申込</li>
-          <li>申込から90日以内にログインしない</li>
-          <li>「過去最強の特典祭」等の別キャンペーン経由で申し込む</li>
-        </ul>
-      </div>
-      <a href="https://pc.moppy.jp/ad/detail.php?site_id=102667" class="btn-link" target="_blank">👆 モッピー経由で楽天銀行を申し込む</a>
-    </div>
-  </div>
-
-  <!-- 合計まとめ -->
-  <div class="summary-card">
-    <h3>💰 もらえるポイントまとめ</h3>
-    <div class="summary-row"><span class="label">楽天証券（モッピー経由）</span><span class="val">13,000円</span></div>
-    <div class="summary-row"><span class="label">楽天カード（ハピタス経由）</span><span class="val">10,700円</span></div>
-    <div class="summary-row"><span class="label">楽天銀行（モッピー経由）</span><span class="val">8,000円</span></div>
-    <div class="summary-total">合計 最大 31,700円以上 🎉</div>
-    <p style="font-size:11px;color:rgba(255,255,255,0.4);text-align:center;margin-top:8px;">※2026年8月現在。期間限定ボーナス含む。金額は変動します。</p>
-  </div>
-
-  <!-- よくある疑問 -->
-  <div class="card">
-    <div class="card-header"><h2>❓ よくある疑問</h2></div>
-    <div class="card-body">
-      <div class="step-list">
-        <div class="step-item">
-          <div class="step-num" style="background:#0ea5e9;font-size:10px;">Q</div>
-          <div class="step-content">
-            <strong style="color:#0c4a6e;">申し込む順番に決まりはある？</strong>
-            <div class="note">厳密な順番は不要。ただし楽天証券申込中の「楽天カードも作る」ボタンを押さないことが最重要。楽天証券を先に申し込み、審査待ちの間に楽天カード→楽天銀行を進めるのが効率的。</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num" style="background:#0ea5e9;font-size:10px;">Q</div>
-          <div class="step-content">
-            <strong style="color:#0c4a6e;">楽天証券の5万円入金は戻ってくる？</strong>
-            <div class="note">入金後すぐNISAで5万円分のインデックスファンドを買付すればOK。NISA口座で使うお金として活用すれば実質タダ。引き出し自体は可能。</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num" style="background:#0ea5e9;font-size:10px;">Q</div>
-          <div class="step-content">
-            <strong style="color:#0c4a6e;">ポイントはいつもらえる？</strong>
-            <div class="note">楽天証券：入金確認後45日前後 / 楽天カード：カード到着後1ヶ月程度 / 楽天銀行：初回ログイン後30日前後。ボーナスポイントは承認の翌日付与。</div>
-          </div>
-        </div>
-        <div class="step-item">
-          <div class="step-num" style="background:#0ea5e9;font-size:10px;">Q</div>
-          <div class="step-content">
-            <strong style="color:#0c4a6e;">楽天会員登録が必要？</strong>
-            <div class="note">3サービスとも楽天IDが必要。まず楽天会員登録（無料）を済ませてから各申込を進めること。</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-note">
-    ※ポイント金額・条件は変動します。申し込み前に必ず各ポイントサイトで最新情報を確認してください。<br>
-    ※期間限定ボーナスは予告なく終了する場合があります。<br>
-    ※2026年8月現在の情報をもとに作成。
-  </div>
-
+<!-- ヒーロー -->
+<div class="hero">
+  <p class="hero-eyebrow">📋 完全手順書 2026年8月現在</p>
+  <h1>ポイントサイト経由で<br>楽天証券を開設すると</h1>
+  <div class="hero-amount">最大 31,700円 もらえる</div>
+  <p class="hero-sub">楽天証券 + 楽天カード + 楽天銀行<br>3つ別々に申し込むだけで合計31,700円以上</p>
 </div>
+
+<div style="padding: 0 16px; margin-top: 16px;">
+
+<!-- 体験談 -->
+<div class="experience-card">
+  <div class="exp-title">💬 実際に使ってる僕からひとこと</div>
+  <div class="exp-body">
+    僕はずっとハピタスをメインで使ってて、楽天市場・楽天ファッション・メルカリで物を買うときは必ずハピタス経由にしてます。今まで4,000円分をAmazonギフトカードに変換して得してきました。<br><br>
+    今回紹介するモッピーは、実は僕は最近まで使ってなかったんですが、楽天証券の口座開設ポイントを比較したらモッピーの方が高かったので今回初めて使ってみました。どちらも無料で登録できるし、損はないので両方入れておくことをおすすめします。
+  </div>
+  <div class="exp-highlight">✅ 登録も使い方も完全無料。ショッピング前に経由するだけでポイントが二重取りできます</div>
+</div>
+
+<!-- 申し込み順序 -->
+<div style="margin-top: 16px;">
+  <div class="section-title">STEP順序（この順番で進める）</div>
+  <div class="order-flow">
+    <div class="flow-item">
+      <div class="flow-num">0</div>
+      <div class="flow-text">
+        <strong>モッピーとハピタスに登録する</strong>
+        <div class="sub">両方無料・2分で完了。登録するだけでも後でポイントが貯まる</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-num">1</div>
+      <div class="flow-text">
+        <strong>モッピー経由で楽天証券を申し込む</strong>
+        <div class="sub">13,000P｜口座開設後30日以内に5万円入金が必要</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-num">2</div>
+      <div class="flow-text">
+        <strong>ハピタス経由で楽天カードを申し込む</strong>
+        <div class="sub">10,700P｜楽天証券の審査待ちの間に済ませる</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-num">3</div>
+      <div class="flow-text">
+        <strong>モッピー経由で楽天銀行を申し込む</strong>
+        <div class="sub">8,000P｜初回ログインだけで条件達成、入金不要</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-num">4</div>
+      <div class="flow-text">
+        <strong>楽天証券でNISA積立設定をする</strong>
+        <div class="sub">これが本命。月1,000円からOK</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 最重要注意 -->
+<div style="background:#fef2f2;border:2px solid #ef4444;border-radius:12px;padding:14px 16px;margin-bottom:16px;">
+  <div style="color:#dc2626;font-weight:900;font-size:14px;margin-bottom:8px;">⚠️ これだけは絶対守って</div>
+  <ul style="padding-left:18px;font-size:13px;line-height:2.2;color:#7f1d1d;">
+    <li>3つの申し込みは<strong>必ず別々に</strong>行う</li>
+    <li>楽天証券申込中に出る「楽天カードも作る」「楽天銀行も」のチェックは<strong>絶対に外す</strong>（ここが一番ミスが多い）</li>
+    <li>各申し込みはポイントサイトのリンクから<strong>24時間以内</strong>に完了させる</li>
+    <li>シークレットモード・VPNは<strong>使わない</strong></li>
+    <li>iPhoneのSafariは「設定→Safari→サイト越えトラッキングを防ぐ」を<strong>OFF</strong>にする</li>
+  </ul>
+</div>
+
+<!-- ======================== STEP 0 ======================== -->
+<div class="section-title">STEP 0 ｜ まず両方に登録する</div>
+
+<!-- モッピー -->
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge badge-moppy">🟡 モッピー</span>
+    <h2>モッピーに無料登録する</h2>
+  </div>
+  <div class="card-body">
+    <div class="tip-box">
+      <strong>💡 モッピーってどんなアプリ？</strong>
+      国内最大級のポイントサイト。クレカ発行・口座開設などの案件のポイント還元率がハピタスより高いことが多い。楽天証券の口座開設は今回モッピーが一番お得だったので紹介。もちろん登録は無料。
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          下のボタンから<b>招待リンク経由で登録</b>する
+          <div class="note">招待リンク経由で登録→5,000P以上の広告を利用すると<b>ボーナス2,000P</b>もらえる（入会月の翌々月末までに達成）。今回の楽天証券（13,000P）を申し込めば余裕で条件クリア</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          メールアドレスとパスワードを入力して登録完了
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          SMS認証（本人確認）を完了させる
+          <div class="note">SMS認証を完了しておかないとポイント受け取り時にトラブルになる場合がある</div>
+        </div>
+      </div>
+    </div>
+    <a href="https://pc.moppy.jp/entry/invite.php?invite=A8aaA139" class="btn btn-moppy" target="_blank">
+      👆 モッピーに無料登録する（招待リンク）
+      <span class="btn-sub">招待コード：A8aaA139｜登録ボーナス対象</span>
+    </a>
+  </div>
+</div>
+
+<!-- ハピタス -->
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge badge-hapitas">🟣 ハピタス</span>
+    <h2>ハピタスに無料登録する</h2>
+  </div>
+  <div class="card-body">
+    <div class="tip-box">
+      <strong>💡 ハピタスってどんなアプリ？</strong>
+      会員数400万人以上のポイントサイト。楽天市場・メルカリ・楽天ファッションなど3,000以上のショップが対象で、買い物前に経由するだけでポイントが二重取りできる。僕は今まで4,000円分をAmazonギフトカードに交換済み。楽天カードの発行は今回ハピタスが一番お得。
+    </div>
+    <div class="bonus-banner" style="margin-bottom:12px;">
+      <div class="bonus-banner-title">🎁 新規登録ボーナス（キャンペーン中・2026年10月まで）</div>
+      <div class="bonus-row">
+        <span class="label">登録後に5,000P以上貯めると</span>
+        <span class="val">+2,700P</span>
+      </div>
+      <div style="font-size:11px;opacity:0.6;margin-top:6px;line-height:1.7;">※エントリー必須・初回限り。ハピタス内のキャンペーンページからエントリーすること（忘れると対象外）</div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          下のボタンから登録する（登録は無料）
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          メールアドレス・パスワードを入力して登録完了
+          <div class="note">スマホアプリも無料でダウンロードできる。ショッピング前に開いて検索するだけでOK</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <strong style="color:#5b21b6;">ハピタス内でキャンペーンにエントリーする（重要）</strong>
+          <div class="note">ログイン後、ハピタスのキャンペーンページから「エントリーする」ボタンを押さないとボーナスが付与されない。エントリー場所は「ハピタス 紹介 エントリー」で検索するか、ハピタストップのバナーから確認</div>
+        </div>
+      </div>
+    </div>
+    <a href="https://hapitas.jp/register/input?i=24551354" class="btn btn-hapitas" target="_blank">
+      👆 ハピタスに無料登録する
+    </a>
+  </div>
+</div>
+
+<!-- ======================== STEP 1 ======================== -->
+<div class="section-title">STEP 1 ｜ 楽天証券でNISA口座を開設する</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge badge-moppy">🟡 モッピー経由</span>
+    <h2>楽天証券の口座を開設する <span class="amount-chip">13,000円</span></h2>
+  </div>
+  <div class="card-body">
+
+    <div class="cond-box">
+      <div class="cond-box-title">✅ ポイント獲得条件（必読）</div>
+      <ul>
+        <li>初めて楽天証券に口座開設する方のみ対象</li>
+        <li>総合取引口座を開設すること（「NISAのみ」はNG）</li>
+        <li>口座開設後<strong>30日以内に5万円以上を入金</strong>すること</li>
+        <li>入金方法はらくらく入金・リアルタイム入金・通常振込のいずれか</li>
+        <li>申込から<strong>3ヶ月以内</strong>に口座開設完了すること</li>
+      </ul>
+    </div>
+
+    <div style="font-size:13px;font-weight:700;color:#0c4a6e;margin-bottom:10px;">📱 申し込みに必要なもの</div>
+    <div style="background:#f8fafc;border-radius:8px;padding:10px 14px;font-size:12px;line-height:2.1;margin-bottom:14px;color:#374151;">
+      ✔ マイナンバーカード（なければ免許証＋マイナンバー通知カードでも可）<br>
+      ✔ 楽天IDとパスワード（楽天会員未登録なら事前に登録しておく）<br>
+      ✔ メールアドレス・銀行口座
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          モッピーにログインした状態で下のボタンをタップ
+          <div class="warn">⚠️ 必ずモッピーのリンクから遷移すること。直接楽天証券にアクセスすると対象外になる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          楽天証券の口座開設ページが開いたら「口座開設（無料）」をタップ
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          メールアドレスを入力→届いたメールのURLをタップ
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          楽天IDでログイン（住所・氏名の入力が省略できる）
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          個人情報を入力（氏名・住所・生年月日など）
+          <div class="ok">「NISA口座も同時に申し込む」に必ずチェック！後で手続きが面倒になる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num red">!</div>
+        <div class="step-content">
+          <strong style="color:#dc2626;">「楽天カードも申し込む」「楽天銀行も開設する」チェックは必ず外す</strong>
+          <div class="warn">ここで一緒に申し込むと楽天カード10,700円・楽天銀行8,000円の特典がまるごと消える。これが一番ミスが多いポイント</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          本人確認は「スマホで本人確認」を選ぶ
+          <div class="note">これを選ぶと最短翌営業日で完了する。郵送を選ぶと1〜2週間かかる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">7</div>
+        <div class="step-content">
+          スマホのカメラでマイナンバーカードを撮影・アップロード
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">8</div>
+        <div class="step-content">
+          「口座開設完了」のメールが届くのを待つ（最短翌営業日〜3営業日）
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">9</div>
+        <div class="step-content">
+          口座開設後<strong>30日以内に5万円以上を入金する</strong>
+          <div class="ok">入金後すぐNISAで5万円分のインデックスファンドを購入すればそのまま運用できる</div>
+          <div class="warn">楽天ポイントやクレカ積立は「入金」にカウントされない。マネーブリッジ設定だけでもNG。らくらく入金・リアルタイム入金・銀行振込のいずれかで</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-box">
+      <div class="ng-box-title">🚫 やると対象外になるNG</div>
+      <ul>
+        <li>過去に楽天証券・楽天FXの口座開設歴がある</li>
+        <li>未成年口座・法人口座での申込</li>
+        <li>申込から3ヶ月以上かかって口座開設した</li>
+        <li>口座開設後30日を過ぎてから入金した</li>
+        <li>クレカ積立しか行わず、5万円の直接入金をしなかった</li>
+      </ul>
+    </div>
+
+    <a href="https://pc.moppy.jp/ad/detail.php?site_id=111069" class="btn btn-moppy" target="_blank">
+      👆 モッピー経由で楽天証券を申し込む
+    </a>
+  </div>
+</div>
+
+<!-- ======================== STEP 2 ======================== -->
+<div class="section-title">STEP 2 ｜ 楽天カードを発行する（審査待ちの間に）</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge badge-hapitas">🟣 ハピタス経由</span>
+    <h2>楽天カードを発行する <span class="amount-chip">10,700円</span></h2>
+  </div>
+  <div class="card-body">
+
+    <div class="tip-box">
+      <strong>⏰ 期間限定ボーナス中（変動あり）</strong>
+      通常10,000P＋チャレンジボーナス700P＝10,700P。金額は時期により変わるので、申し込み前にハピタスで現在の還元額を確認してから進めること。
+    </div>
+
+    <div class="cond-box">
+      <div class="cond-box-title">✅ ポイント獲得条件（必読）</div>
+      <ul>
+        <li>楽天カードを<strong>初めて</strong>発行する方のみ対象</li>
+        <li>ハピタスのリンクをクリック後、<strong>同一ブラウザでそのまま申込完了</strong>まで進む</li>
+        <li>カードが実際に<strong>手元に到着</strong>すること（受け取り必須）</li>
+        <li>申込から<strong>90日以内</strong>にカード発行されること</li>
+      </ul>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          ハピタスにログインして「楽天カード」を検索
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          ハピタス内の楽天カードページから「申し込みはこちら」をタップ
+          <div class="note">このリンクから遷移してそのまま申込完了まで進むこと。ページを離れると対象外になる場合がある</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          楽天IDでログイン→必要事項を入力して申し込む
+          <div class="ok">申込完了画面の「カード申込受付ID」を必ずスクショ。問い合わせ時に必要</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          カードが郵送で届いたら受け取る
+          <div class="note">不在なら再配達を申請。カードを受け取らないと対象外になる</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-box">
+      <div class="ng-box-title">🚫 やると対象外になるNG</div>
+      <ul>
+        <li>過去に楽天カードの申込・保有歴がある（種類問わず全部NG）</li>
+        <li>楽天ゴールド・プレミアム・ビジネスカード等を選ぶ（楽天カード・楽天PINKカードのみ対象）</li>
+        <li>楽天証券の申込途中に出てくるボタンから申し込む</li>
+        <li>申込から90日以上かかってカード発行した</li>
+        <li>カードを受け取らなかった・入会後90日以内に退会した</li>
+      </ul>
+    </div>
+
+    <a href="https://hapitas.jp/" class="btn btn-hapitas" target="_blank">
+      👆 ハピタスから楽天カードを申し込む
+      <span class="btn-sub">ログイン後「楽天カード」で検索してください</span>
+    </a>
+  </div>
+</div>
+
+<!-- ======================== STEP 3 ======================== -->
+<div class="section-title">STEP 3 ｜ 楽天銀行を開設する</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge badge-moppy">🟡 モッピー経由</span>
+    <h2>楽天銀行の口座を開設する <span class="amount-chip">8,000円</span></h2>
+  </div>
+  <div class="card-body">
+
+    <div class="tip-box">
+      <strong>⏰ チャレンジボーナス中（変動あり）</strong>
+      通常1,500P＋ボーナス6,500P＝合計8,000P。ボーナス終了後は1,500Pになる。申し込み前にモッピーで現在の還元額を確認すること。
+    </div>
+
+    <div class="cond-box">
+      <div class="cond-box-title">✅ ポイント獲得条件（必読）</div>
+      <ul>
+        <li>初めて楽天銀行の口座を開設する方のみ対象</li>
+        <li>口座開設後に<strong>初回ログインを完了</strong>すること（入金・残高は不要）</li>
+        <li>申込から<strong>90日以内</strong>にログインすること</li>
+        <li><strong>スマホのブラウザ（SafariまたはChrome）</strong>から申し込む（アプリ経由はNG）</li>
+      </ul>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          モッピーにログインした状態で下のボタンをタップ
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          楽天銀行の口座開設フォームに情報を入力
+          <div class="note">楽天IDでログインして進むとスムーズ</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          本人確認書類をアップロード（eKYCでスマホ完結）
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          ログイン情報（ユーザーID・パスワード・暗証番号）がメール or 郵便で届く
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <strong style="color:#15803d;">スマホのブラウザ（SafariやChromeアプリ）から楽天銀行にアクセスしてログインする</strong>
+          <div class="ok">✅ 初回ログイン完了でポイント獲得条件達成！残高・入金は一切不要</div>
+          <div class="warn">⚠️ 楽天銀行の「アプリ」からログインすると対象外。必ずSafariやChromeなどブラウザから</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box" style="margin-top:12px;margin-bottom:0;">
+      <strong>💡 開設後にやっておくとさらにお得</strong>
+      楽天証券と楽天銀行を連携（マネーブリッジ）すると、楽天銀行の普通預金金利が年0.38%にアップ。銀行に眠ってるお金もちゃんと働かせよう。
+    </div>
+
+    <div class="ng-box">
+      <div class="ng-box-title">🚫 やると対象外になるNG</div>
+      <ul>
+        <li>過去に楽天銀行の口座開設歴がある</li>
+        <li>楽天銀行のアプリから申し込む・ログインする（ブラウザで行うこと）</li>
+        <li>楽天証券と同時申込（必ず別々に申し込む）</li>
+        <li>法人口座での申込</li>
+        <li>申込から90日以内にログインしない</li>
+      </ul>
+    </div>
+
+    <a href="https://pc.moppy.jp/ad/detail.php?site_id=102667" class="btn btn-moppy" target="_blank">
+      👆 モッピー経由で楽天銀行を申し込む
+    </a>
+  </div>
+</div>
+
+<!-- ======================== STEP 4 ======================== -->
+<div class="section-title">STEP 4 ｜ NISAの積立設定をする（本命）</div>
+
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge badge-prep">📈 楽天証券</span>
+    <h2>積立設定をする<span style="font-size:12px;font-weight:500;color:#64748b;margin-left:6px;">← これが本番</span></h2>
+  </div>
+  <div class="card-body">
+
+    <div class="tip-box">
+      <strong>💡 買う商品はこれ一択</strong>
+      「eMAXIS Slim全世界株式（オール・カントリー）」通称オルカン。世界約3,000社に一気に分散できて、信託報酬が年0.05775%と超低コスト。設定したら放置でOK。
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          楽天証券にログイン→「投資信託」→「探す・購入」
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          検索欄に「<b>オールカントリー</b>」と入力して検索
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          「<b>eMAXIS Slim全世界株式(オール・カントリー)</b>」を選ぶ
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          「<b>積立設定</b>」ボタンをタップ
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num red">!</div>
+        <div class="step-content">
+          口座区分は必ず「<strong style="color:#dc2626;">NISAつみたて投資枠</strong>」を選ぶ
+          <div class="warn">「特定口座」を選ぶと利益の約20%が税金で消える。絶対にNISAを選ぶこと</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          毎月の積立金額を入力
+          <div class="note">月1,000円からでもOK。続けられる金額が正解。あとからいつでも変更できる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          引落方法は「<b>楽天カードクレジット決済</b>」を選ぶ
+          <div class="ok">カード払いにすると毎月最大1%のポイント還元。月3万円なら毎月300P → 年3,600円分が自動で貯まる</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">7</div>
+        <div class="step-content">
+          目論見書を確認 → 取引暗証番号を入力 → <strong style="color:#15803d;">完了！</strong>
+          <div class="ok">✅ あとは毎月自動で積立される。アプリを毎日見る必要はない</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-box">
+      <div class="ng-box-title">🚫 設定でよくあるミス</div>
+      <ul>
+        <li>「特定口座」で積立してしまう→必ず「NISAつみたて投資枠」を選ぶ</li>
+        <li>分配金コースを「受取型」にする→「再投資型」を選ばないと複利が止まる</li>
+        <li>最初から無理な金額を設定する→あとから変更できるので、まず続けられる金額で</li>
+        <li>積立後に毎日アプリで値動きを見る→見ない方がいい。暴落のたびに売りたくなるだけ</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- 合計まとめ -->
+<div class="summary">
+  <h3>💰 もらえるポイントまとめ</h3>
+  <div class="summary-row"><span class="l">楽天証券（モッピー経由）</span><span class="r">13,000円</span></div>
+  <div class="summary-row"><span class="l">楽天カード（ハピタス経由）</span><span class="r">10,700円</span></div>
+  <div class="summary-row"><span class="l">楽天銀行（モッピー経由）</span><span class="r">8,000円</span></div>
+  <div class="summary-row"><span class="l">モッピー登録ボーナス（紹介経由）</span><span class="r">2,000円</span></div>
+  <div class="summary-row"><span class="l">ハピタス登録ボーナス（キャンペーン中）</span><span class="r">2,700円</span></div>
+  <div class="summary-total">合計 最大 36,400円以上 🎉</div>
+  <p class="summary-note">※2026年8月現在。期間限定ボーナス含む。金額は変動する場合があります。</p>
+</div>
+
+<!-- よくある疑問 -->
+<div class="card">
+  <div class="card-header"><h2>❓ よくある疑問</h2></div>
+  <div class="card-body">
+    <div class="qa-item">
+      <div class="qa-q">Q. 3つまとめて申し込んじゃダメなの？</div>
+      <div class="qa-a">ダメです。楽天証券の申込中に「楽天カードも作る」「楽天銀行も」のチェックを入れると、カード・銀行のポイントサイト特典がまるごと消えます。必ず別々に申し込んでください。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">Q. 5万円の入金って損しない？</div>
+      <div class="qa-a">入金後すぐNISAでオルカンを5万円分購入すればそのまま運用できます。13,000円ももらえた上で投資も始められるので実質タダどころかお得です。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">Q. ポイントはいつもらえる？</div>
+      <div class="qa-a">楽天証券：入金確認後45日前後。楽天カード：カード到着後1ヶ月程度。楽天銀行：初回ログイン後30日前後。ボーナスポイントは承認の翌日付与。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">Q. 楽天会員じゃなくても申し込める？</div>
+      <div class="qa-a">3サービスとも楽天IDが必要です。まず楽天会員登録（無料）を済ませてから各申込を進めてください。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">Q. ハピタスとモッピーは登録後も使える？</div>
+      <div class="qa-a">もちろん。ハピタスは楽天市場・メルカリ・楽天ファッション等のショッピング前に経由するだけでポイント二重取りできます。モッピーも今後の口座開設・クレカ発行案件で活躍します。</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /padding -->
+
+<div class="footer-note">
+  ※ポイント金額・条件は変動します。申し込み前に必ず各ポイントサイトで最新情報を確認してください。<br>
+  ※期間限定ボーナスは予告なく終了する場合があります。<br>
+  ※2026年8月現在の情報をもとに作成。
+</div>
+
+</div><!-- /container -->
 </body>
 </html>
